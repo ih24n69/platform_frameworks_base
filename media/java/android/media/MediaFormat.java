@@ -124,6 +124,15 @@ public final class MediaFormat {
     private Map<String, Object> mMap;
 
     /**
+    * A key describing the desired level to be used by an encoder.
+     * Constants are declared in {@link MediaCodecInfo.CodecProfileLevel}.
+     * This key is only supported for codecs that specify a profile.
+     *
+     * @see MediaCodecInfo.CodecCapabilities#profileLevels
+     */
+    public static final String KEY_LEVEL = "level";
+
+    /**    
      * A key describing the mime type of the MediaFormat.
      * The associated value is a string.
      */
